@@ -1,3 +1,4 @@
+new_sesson: true
 book_filename: bookdown
 output_dir: "docs"
 clean: [packages.bib, bookdown.bbl]
@@ -8,3 +9,4 @@ language:
   ui:
     edit: "编辑"
     chapter_name: ["第 ", " 章"]
+    delet_merged_file: true
