@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>第 1 章 牛刀小试 | 麻麻说我们可以用 R Markdown 写书了</title>
   <meta name="description" content="一个简单的中文书示例。" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="第 1 章 牛刀小试 | 麻麻说我们可以用 R Markdown 写书了" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="一个简单的中文书示例。" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="张三" />
 
 
-<meta name="date" content="2021-06-14" />
+<meta name="date" content="2022-05-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +32,8 @@
   
 <link rel="prev" href="author.html"/>
 <link rel="next" href="wind.html"/>
-<script src="libs/header-attrs/header-attrs.js"></script>
-<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,8 +49,8 @@
 
 
 
-
 <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections/anchor-sections.js"></script>
 
 
@@ -194,12 +193,12 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1" number="1">
-<h1><span class="header-section-number">第 1 章</span> 牛刀小试</h1>
+<div id="intro" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">第 1 章</span> 牛刀小试<a href="intro.html#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>现在我们可以试试 <strong>bookdown</strong> 的一些初级功能了，例如图表。图 <a href="intro.html#fig:hello">1.1</a> 是一幅无趣的散点图，表 <a href="intro.html#tab:iris">1.1</a> 是一份枯燥的数据。</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="intro.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, .<span class="dv">1</span>))</span>
 <span id="cb3-2"><a href="intro.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cars, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
-<div class="figure"><span id="fig:hello"></span>
+<div class="figure"><span style="display:block;" id="fig:hello"></span>
 <img src="bookdown_files/figure-html/hello-1.png" alt="雷猴啊，散点图！" width="90%" />
 <p class="caption">
 图 1.1: 雷猴啊，散点图！
@@ -265,7 +264,8 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>就这样，你可以一直编下去，直到编不下去。</p>
+<p>就这样，你可以一直编下去，直到编不下去。
+编不下去也要编啊</p>
 
 </div>
             </section>
@@ -278,7 +278,6 @@ div.csl-indent {
     </div>
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
-<script src="libs/gitbook/js/lunr.js"></script>
 <script src="libs/gitbook/js/clipboard.min.js"></script>
 <script src="libs/gitbook/js/plugin-search.js"></script>
 <script src="libs/gitbook/js/plugin-sharing.js"></script>
@@ -318,6 +317,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown.pdf", "bookdown.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "none"
 }
